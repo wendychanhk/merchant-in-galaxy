@@ -1,2 +1,2 @@
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'merchant_in_galaxy'
+require_relative '../lib/merchant'
+require_relative '../lib/roman_convertor'
