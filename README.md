@@ -65,18 +65,18 @@ I have no idea what you are talking about
 ## Design
 1. Read lines in the given text file
 2. Categorize each line into 5 types and put them into separate arrays: 
-- galaxy unit and its roman value (eg. glob is I) 
-- metal and assigned credit value (eg. glob glob Silver is 34 Credits)
-- question about value of galaxy unit (eg. how much is pish tegj glob glob ?)
-- question about value of metal (eg. how many Credits is glob prok Silver ?)
-- unknown question or statement (eg. how much wood could a woodchuck chuck if a woodchuck could chuck wood ?)
+a) galaxy unit and its roman value (eg. glob is I) 
+b) metal and assigned credit value (eg. glob glob Silver is 34 Credits)
+c) question about value of galaxy unit (eg. how much is pish tegj glob glob ?)
+d) question about value of metal (eg. how many Credits is glob prok Silver ?)
+e) unknown question or statement (eg. how much wood could a woodchuck chuck if a woodchuck could chuck wood ?)
 3. Process line based on these 5 line types 
-- class Merchant reads text file and initialize 5 empty arrays for the 5 types of lines 
-- module UnitValue returns a hash to indicate the assigned roman value of each galaxy unit (eg. "glob"=>"I")
-- module RomanConvertor process any given roman string (eg. 'XXXVII' and translate it into arabic value)
-- module MetalValue calculates how much each unit of metal worths (eg. each Silver worths 17 in sample.txt)
-- module MetalsQuestions processes question about value of metal and return answers 
-- module Output inserts answers into a final answer array according to the original questions order 
+a) class Merchant reads text file and initialize 5 empty arrays for the 5 types of lines 
+b) module UnitValue returns a hash to indicate the assigned roman value of each galaxy unit (eg. "glob"=>"I")
+c) module RomanConvertor process any given roman string (eg. 'XXXVII' and translate it into arabic value)
+d) module MetalValue calculates how much each unit of metal worths (eg. each Silver worths 17 in sample.txt)
+e) module MetalsQuestions processes question about value of metal and return answers 
+f) module Output inserts answers into a final answer array according to the original questions order 
 
 ## Assumptions
 
